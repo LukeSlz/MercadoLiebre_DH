@@ -16,10 +16,17 @@ header{
 .precio{
     font-size: 18px;
     text-align: center;
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 .desc{
     font-size: 16px;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: 10%;
+    font-weight: bold;
 }
 #logo{
     width: 80%;
@@ -89,4 +96,11 @@ body{
 }
 h4{
     color: #666;
+}
+.percent{
+    color: #39b54a;
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 5%;
+    margin-bottom: auto;
 }
