@@ -12,6 +12,7 @@ header{
     padding-bottom: 3%;
     max-width: 100em;
     max-height: 100em;
+    padding-left: rem;
 }
 .precio{
     font-size: 18px;
@@ -68,13 +69,17 @@ i{
 .burger-menu{
     text-align: center;
 }
-#burger{
+.burger-menu button{
     background-color: #03264C;;
-    color: white;
-    font-size: 150%;
+    font-size: 100%;
     padding: 1.5%;
     border: solid #03264C;;
     border-radius: 20%;
+    margin-bottom: 1%;
+}
+#burger{
+    color: white;
+    margin-bottom: 0%;
 }
 .lists li{
     list-style: none;
@@ -103,4 +108,12 @@ h4{
     margin-left: 1%;
     margin-top: 5%;
     margin-bottom: auto;
+}
+footer h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+footer p{
+    margin-top: 1rem;
+    margin-bottom: 10%
 }
