@@ -78,6 +78,12 @@ body{
     max-width: 100em;
     max-height: 100em;
 }
+.secciones div{
+    margin: auto 15px;
+}
+.secciones article{
+    border-top: 1px solid #ebebeb;
+}
 .precio, .percent{
     display:  inline-block;
 }
@@ -120,3 +126,7 @@ footer i{
     font-size: 2em;
     margin-bottom: 10px;
 }
+@media (min-width: 361px){
+    body{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}}
