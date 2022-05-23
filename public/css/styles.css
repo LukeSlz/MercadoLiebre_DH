@@ -1,8 +1,6 @@
 *{
     font-family: 'Roboto', sans-serif;
-}
-*p{
-    font-size: 12px;;
+    box-sizing: border-box;
 }
 h3{
     font-size: 24px;
@@ -14,20 +12,12 @@ header{
     max-height: 100em;
     padding-left: rem;
 }
-.precio{
-    font-size: 18px;
+main{
     text-align: center;
-    display: inline-block;
-    margin-left: 40%;
-    margin-top: 5%;
-    margin-bottom: 2%;
+    width: 90vw;
 }
-.desc{
-    font-size: 16px;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: 10%;
-    font-weight: bold;
+main article{
+    margin-bottom: 10px;
 }
 #logo{
     width: 80%;
@@ -88,26 +78,35 @@ body{
     max-width: 100em;
     max-height: 100em;
 }
+.precio, .percent{
+    display:  inline-block;
+}
+.precio{
+    font-size: 18px;
+}
+.desc, .percent{
+    font-size: 16px;
+}
+.percent{
+    color: #39b54a;
+}
+.menu-cuenta li, i{
+    display: inline-block;
+    font-size: 1rem;
+}
 .pics{
     width: 70%;
     height: auto;
     display: block;
     margin: auto;
 }
-.footer-info{
+footer{
     text-align: center;
     margin-top: 10%;
     margin-bottom: 1px;
 }
 h4{
     color: #666;
-}
-.percent{
-    color: #39b54a;
-    display: inline-block;
-    margin-left: 1%;
-    margin-top: 5%;
-    margin-bottom: auto;
 }
 footer h3{
     margin-top: 0%;
@@ -116,4 +115,8 @@ footer h3{
 footer p{
     margin-top: 1rem;
     margin-bottom: 10%
+}
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
 }
