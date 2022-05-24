@@ -12,12 +12,16 @@ header{
     max-height: 100em;
     padding-left: rem;
 }
+body{
+    text-align: center;
+}
 main{
     text-align: center;
     width: 90vw;
 }
 main article{
     margin-bottom: 10px;
+    text-align: center;
 }
 #logo{
     width: 80%;
@@ -71,12 +75,18 @@ i{
     color: white;
     margin-bottom: 0%;
 }
+.lists{
+    display: none;
+}
 .lists li{
     list-style: none;
 }
 body{
     max-width: 100em;
     max-height: 100em;
+}
+.secciones{
+    margin-left: 10%;
 }
 .secciones div{
     margin: auto 15px;
@@ -93,12 +103,19 @@ body{
 .desc, .percent{
     font-size: 16px;
 }
+.desc{
+    display: none;
+}
 .percent{
     color: #39b54a;
+}
+header ul{
+    padding: 0;
 }
 .menu-cuenta li, i{
     display: inline-block;
     font-size: 1rem;
+    margin: auto;
 }
 .pics{
     width: 70%;
@@ -127,6 +144,17 @@ footer i{
     margin-bottom: 10px;
 }
 @media (min-width: 361px){
-    body{
+    main article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}}
+    }
+    .desc{
+        margin: auto;
+        display: block;
+    }
+    .lists{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
