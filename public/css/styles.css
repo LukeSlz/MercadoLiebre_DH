@@ -1,5 +1,7 @@
 *{
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 h3{
@@ -49,6 +51,9 @@ i{
     margin-bottom: 10px;
     color: #03264C;;
 }
+.fa-solid{
+    margin: 0;
+}
 .info{
     text-align: center;
 }
@@ -89,25 +94,36 @@ body{
     margin-left: 10%;
 }
 .secciones div{
-    margin: auto 15px;
+    margin: auto;
+
 }
 .secciones article{
     border-top: 1px solid #ebebeb;
 }
-.precio, .percent{
-    display:  inline-block;
+.fa-truck{
+    margin-left: 90%;
+    color:#39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    padding: 1%;
 }
-.precio{
-    font-size: 18px;
-}
-.desc, .percent{
-    font-size: 16px;
-}
-.desc{
-    display: none;
+.precio-desc{
+    display: flex;
+    margin: 0;
 }
 .percent{
     color: #39b54a;
+    flex-grow: 0.7;
+}
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+.descripcion, .percent{
+    font-size: 16px;
+}
+.descripcion{
+    display: none;
 }
 header ul{
     padding: 0;
@@ -122,6 +138,7 @@ header ul{
     height: auto;
     display: block;
     margin: auto;
+    border-bottom: 1px solid #ebebeb;
 }
 footer{
     text-align: center;
@@ -147,7 +164,7 @@ footer i{
     main article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .desc{
+    .descripcion{
         margin: auto;
         display: block;
     }
