@@ -6,13 +6,13 @@
 }
 h3{
     font-size: 24px;
+    padding: 10px 0;
 }
 header{
     background-color: #EAC926;
     padding-bottom: 3%;
-    max-width: 100em;
-    max-height: 100em;
-    padding-left: rem;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 body{
     text-align: center;
@@ -51,6 +51,7 @@ i{
     margin-bottom: 10px;
     color: #03264C;;
 }
+
 .fa-solid{
     margin: 0;
 }
@@ -90,8 +91,8 @@ body{
     max-width: 100em;
     max-height: 100em;
 }
-.secciones{
-    margin-left: 10%;
+main{
+margin: auto;
 }
 .secciones div{
     margin: auto;
@@ -101,7 +102,7 @@ body{
     border-top: 1px solid #ebebeb;
 }
 .fa-truck{
-    margin-left: 90%;
+    margin-left: 80%;
     color:#39b54a;
     border: solid 1px #39b54a;
     border-radius: 50%;
@@ -114,6 +115,7 @@ body{
 .percent{
     color: #39b54a;
     flex-grow: 0.7;
+    text-align: left;
 }
 .precio{
     font-size: 18px;
@@ -147,6 +149,7 @@ footer{
 }
 h4{
     color: #666;
+    padding-bottom: 10px;
 }
 footer h3{
     margin-top: 0%;
@@ -163,7 +166,9 @@ footer i{
 @media (min-width: 361px){
     main article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 50%;
     }
+
     .descripcion{
         margin: auto;
         display: block;
@@ -173,5 +178,14 @@ footer i{
     }
     .burger-menu{
         display: none;
+    }
+    .secciones{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 769px){
+    main article{
+        max-width: 25%;
     }
 }
