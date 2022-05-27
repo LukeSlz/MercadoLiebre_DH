@@ -62,7 +62,7 @@ i{
 }
 .info{
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
     padding: 20px 0%;
 }
 .info #hand{
@@ -74,7 +74,6 @@ i{
 }
 .info #compra{
     margin-left: 0;
-    display: inline-block;
 }
 .burger-menu{
     text-align: center;
@@ -181,6 +180,31 @@ footer i{
     margin-bottom: 10px;
 }
 
+.create-form{
+    padding: 15px;
+}
+.create-form input, label{
+    margin-bottom: 15px;
+}
+.create-form label{
+    font-style: italic;
+}
+.info-personal, .info-cuenta{
+    width: 100%;
+    max-width: 500px;
+}
+.profile-pic{
+    display: flex;
+    margin: auto;
+    max-width: 500px;
+}
+.profile-pic label{
+    width: 200px;
+}
+footer{
+    margin: 5%;
+}
+
 
 @media (min-width: 361px){
     main article{
@@ -190,6 +214,9 @@ footer i{
     .descripcion{
         margin: auto;
         display: block;
+    }
+    .info{
+        font-size: 0.98em;
     }
     .lists{
         display: flex;
@@ -279,7 +306,7 @@ footer i{
         min-width: 309px;
         width: 30%;
         text-align: right;
-        font-size: 1em;
+        font-size: 0.98em;
     }
     .info #hand{
         margin: 0%;

@@ -57,7 +57,8 @@ rel="stylesheet" />
         </div>
     </header>
     <main>
-        <form action="/" method="GET">
+        <!-- Formulario de registro-->
+        <form action="/" method="GET" class="create-form">
             <h3>Registrate</h3>
             <div class="formulario">
                 <br>
@@ -90,12 +91,13 @@ rel="stylesheet" />
                 <br>
                 <label><input type="checkbox" name="intereses" value="vida-sana">Vida Sana</label>
                 <br>
-                <label for="picture">Foto de usuario: </label>
-                <input type="file" name="picture" accept=".png, .jpg, .jpeg" >
+                <div class="profile-pic">
+                    <label>Foto de usuario: </label>
+                    <input type="file" name="picture" accept=".png, .jpg, .jpeg" class="info-cuenta">
+                </div>
+                <input type="password" name="password" placeholder="Contraseña"  class="info-cuenta">
                 <br>
-                <input type="password" name="password" placeholder="Contrasena" >
-                <br>
-                <input type="password" name="conf-password" placeholder="Confirmar contrasena" >
+                <input type="password" name="conf-password" placeholder="Confirmar contraseña"  class="info-cuenta">
                 <br>
                 <button type="reset">Cancelar</button>
                 <button type="submit">Enviar</button>
