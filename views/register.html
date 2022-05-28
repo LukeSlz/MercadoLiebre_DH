@@ -41,10 +41,10 @@ rel="stylesheet" />
             <nav class="menu-cuenta">
                 <ul>
                     <div>
-                        <li><a href="/views/register.html">Crea tu cuenta<i class="fa-solid fa-id-card"></i></a></li>
+                        <li><a href="/register">Crea tu cuenta<i class="fa-solid fa-id-card"></i></a></li>
                     </div>
                     <div>
-                        <li><a href="">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                        <li><a href="/login">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
                     </div>
                     <div>
                         <li><a href="">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
@@ -62,44 +62,44 @@ rel="stylesheet" />
             <h3>Registrate</h3>
             <div class="formulario">
                 <br>
-                <input type="text" name="name" placeholder="Nombre y apellido" class="info-personal" >
+                <input type="text" name="name" placeholder="Nombre y apellido" class="info-personal" required>
                 <br>
-                <input type="text" name="user" placeholder="Nombre de usuario" class="info-personal" >
+                <input type="text" name="user" placeholder="Nombre de usuari@" class="info-personal"  required>
                 <br>
-                <input type="email" name="email" placeholder="e-mail" class="info-personal" >
+                <input type="email" name="email" placeholder="e-mail" class="info-personal"  required>
                 <br>
                 <label for="date">Fecha de nacimiento</label>
                 <br>
-                <input type="date" name="nacimiento" class="info-personal" >
+                <input type="date" name="nacimiento" class="info-personal"  required>
                 <br>
-                <input type="text" name="domicilio" placeholder="Domicilio" class="info-personal" >
-                <br>
-                <label for="perfil">Perfil de usuario</label>
-                <br>
-                <label><input type="radio" name="perfil" value="comprador" >Comprador</label>
-                <label><input type="radio" name="perfil" value="vendedor" >Vendedor</label>
-                <br>
-                <label for="intereses">Intereses</label>
-                <br>
-                <label><input type="checkbox" name="intereses" value="electro">Electro</label>
-                <br>
-                <label><input type="checkbox" name="intereses" value="moda">Moda</label>
-                <br>
-                <label><input type="checkbox" name="intereses" value="hogar">Hogar</label>
-                <br>
-                <label><input type="checkbox" name="intereses" value="jugueteria">Jugueteria</label>
-                <br>
-                <label><input type="checkbox" name="intereses" value="vida-sana">Vida Sana</label>
-                <br>
+                <input type="text" name="domicilio" placeholder="Domicilio" class="info-personal"  required>
+                <div class="user-interests">
+                    <label for="perfil">Perfil de usuario</label>
+                    <br>
+                    <label><input type="radio" name="perfil" value="comprador" >Comprador</label>
+                    <label><input type="radio" name="perfil" value="vendedor" >Vendedor</label>
+                    <br>
+                    <label for="intereses" class="interests">Intereses</label>
+                    <br>
+                    <label><input type="checkbox" name="intereses" value="electro">Electro</label>
+                    <br>
+                    <label><input type="checkbox" name="intereses" value="moda">Moda</label>
+                    <br>
+                    <label><input type="checkbox" name="intereses" value="hogar">Hogar</label>
+                    <br>
+                    <label><input type="checkbox" name="intereses" value="jugueteria">Jugueteria</label>
+                    <br>
+                    <label><input type="checkbox" name="intereses" value="vida-sana">Vida Sana</label>
+                </div>
                 <div class="profile-pic">
                     <label>Foto de usuario: </label>
                     <input type="file" name="picture" accept=".png, .jpg, .jpeg" class="info-cuenta">
                 </div>
-                <input type="password" name="password" placeholder="Contraseña"  class="info-cuenta">
+                <input type="password" name="password" placeholder="Contraseña"  class="info-cuenta" required>
                 <br>
-                <input type="password" name="conf-password" placeholder="Confirmar contraseña"  class="info-cuenta">
+                <input type="password" name="conf-password" placeholder="Confirmar contraseña"  class="info-cuenta" required>
                 <br>
-                <button type="reset">Cancelar</button>
+                <button type="reset">Limpiar</button>
                 <button type="submit">Enviar</button>
             </div>
         </form>
