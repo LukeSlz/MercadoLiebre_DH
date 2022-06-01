@@ -446,6 +446,7 @@ footer{
     .copyright{
         margin-top: 20px;
     }
+}
 @media (min-width: 1200px){
     body{
         margin: auto;
