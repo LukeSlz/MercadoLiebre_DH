@@ -87,7 +87,7 @@ i{
     background-color: #03264C;;
     font-size: 100%;
     padding: 2%;
-    border: solid #03264C;;
+    border: solid #03264C;
     border-radius: 20%;
     margin-bottom: 1%;
 }
@@ -124,7 +124,8 @@ body{
     color:#39b54a;
     border: solid 1px #39b54a;
     border-radius: 50%;
-    padding: 1%;
+    padding: 1.5%;
+    transition-duration: 500ms;
 }
 .precio-desc{
     display: flex;
@@ -190,6 +191,10 @@ footer i{
     background-color: rgba(160, 160, 160, 0.2);
     border-radius: 20px;
     margin-top: 20px;
+}
+.login-form button:hover{
+    background-color: #0022AA;
+    color: #ffffff;
 }
 .create-form input, .login-form input{
     margin-bottom: 15px;
@@ -272,13 +277,33 @@ footer{
     }
 }
 @media (min-width: 361px){
-    main article{
+    main article{        max-width: 48%;
+        position: relative;
+    }
+    main article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        max-width: 48%;
+    }
+    main article:hover .fa-truck{
+        transform: rotate(-90deg);
     }
     .descripcion{
+        position: absolute;
+        font-size: 1.5rem;
+        bottom: 40px;
+        background-color: rgba(0,0,0,0.5);
+        color: #ffffff;
+        padding: 20px;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all 450ms;
+    }
+    .secciones article:hover .descripcion{
+        opacity: 1;
         margin: auto;
-        display: block;
     }
     .info{
         font-size: 0.98em;
@@ -408,7 +433,19 @@ footer{
     .burger-menu{
         display: none;
     }
-}
+    .footer-info{
+        display: flex;
+    }
+    .footer-info article{
+        margin: 5px;
+    }
+    .footer-info i:hover{
+        color: #EAC926;
+        text-shadow: 0 0 5px #03264C;
+    }
+    .copyright{
+        margin-top: 20px;
+    }
 @media (min-width: 1200px){
     body{
         margin: auto;
