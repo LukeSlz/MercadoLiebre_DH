@@ -223,7 +223,7 @@ footer i{
 }
 
 input[type="date"]{
-    max-width: 100px;
+    width: 150px;
 }
 .user-interests{
     text-align-last: left;
@@ -232,6 +232,9 @@ input[type="date"]{
 }
 .user-interests input[type="radio"]{
     margin: 5px 10px 10px;
+}
+.user-interests input[type="checkbox"]{
+    margin-right: 10px;
 }
 .user-interests input[value="electro"]{
     margin-top: 10px;
