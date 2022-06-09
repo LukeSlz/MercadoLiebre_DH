@@ -16,7 +16,7 @@ h3{
     padding: 30px;
     position: fixed;
     top: 0;
-    left: auto;
+    left: 0;
     z-index: 100;
 }
 body{
@@ -343,13 +343,13 @@ footer{
         margin-top: 10px;
     }
     main{
-        margin-top: 50vh;
+        margin-top: 35vh;
     }
 }
 
 @media (min-width: 768px){
     main{
-        margin-top: 35vh;
+        margin-top: 25vh;
     }
     main article{
         max-width: 24%;
