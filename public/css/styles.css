@@ -183,7 +183,7 @@ footer i{
 .create-form {
     padding: 15px;
     border-radius: 20px;
-    margin-top: 45vh;
+    margin-top: 250px;
     background-color: rgba(160, 160, 160, 0.2);
 }
 .login-form{
@@ -377,7 +377,7 @@ footer{
 
 @media (min-width: 768px){
     main{
-        margin-top: 25vh;
+        margin-top: 200px; 
     }
     main article{
         max-width: 24%;
